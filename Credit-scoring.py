@@ -18,4 +18,7 @@ def credit_score():
     name, score = credit_scoring_model(data)
 
     # Return the credit score as a JSON response
-    return jsonify({'name': name,'credit_score': score, 'Credit score formula':'age * 20 + income / 10000'})  
+    return jsonify({'name': name,'credit_score': score, 'Credit score formula':'age * 20 + income / 10000'})
+
+if __name__ == '__main__':
+    app.run()
